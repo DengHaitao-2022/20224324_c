@@ -1,0 +1,8 @@
+{
+    "files.encoding": "gbk",
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "iostream": "cpp"
+    },
+    "cmake.ignoreCMakeListsMissing": true
+}

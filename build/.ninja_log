@@ -1,0 +1,16 @@
+# ninja log v6
+460	637	7490617464872263	lib/libgmock_main.a	756e82bc7983bb3e
+263	438	7490617462905087	lib/libgtest_main.a	99847f66097eafe
+8	414	7490631192532806	CMakeFiles/main_program.dir/s1/s1.cpp.obj	75d1f59ff6f8747a
+21	496	7490633312991303	CMakeFiles/test_s1.dir/s1/s1.cpp.obj	a941e78d8d3aba83
+9	1463	7490633312881315	CMakeFiles/test_s1.dir/s1/test_s1.cpp.obj	cdbb17b845787794
+7	150	7490629834171100	main_program.exe	f7fbee5252005715
+10	4845	7490616122233703	googletest-1.15.2/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	f607982d0b1f100
+258	459	7490617462854989	lib/libgmock.a	9bf8b980cf6b2502
+1038	1165	7489307241998436	Project.exe	ba4ca9a7acb23a26
+1	13848	7490616122143591	googletest-1.15.2/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	d016b60b1a3e6c17
+1	1034	7489307231636097	CMakeFiles/Project.dir/s1/helle.cpp.obj	7c5c527bf872dcb1
+8	257	7490617460355648	lib/libgtest.a	864f744b5f8a802d
+18	1239	7490616122319389	googletest-1.15.2/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	f1f3e80dbeed26e6
+40	1455	7490616122535952	googletest-1.15.2/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	4cec63c2a2588857
+1464	1741	7490633327417734	test_s1.exe	d6d24c4bc4d9464a

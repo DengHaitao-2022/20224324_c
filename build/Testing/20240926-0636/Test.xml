@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Win32-ninja"
+	BuildStamp="20240926-0636-Experimental"
+	Name="Hi"
+	Generator="ctest-3.29.2"
+	CompilerName="H:/mingw64/bin/c++.exe"
+	CompilerVersion="13.2.0"
+	OSName="Windows"
+	Hostname="Hi"
+	OSRelease=" Professional"
+	OSVersion=" (Build 9200)"
+	OSPlatform="AMD64"
+	Is64Bits="1"
+	VendorString=""
+	VendorID="Unknown Manufacturer"
+	FamilyID="0"
+	ModelID="0"
+	ProcessorCacheSize="0"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="6"
+	TotalVirtualMemory="40116"
+	TotalPhysicalMemory="32604"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2995"
+	>
+	<Testing>
+		<StartDateTime>Sep 26 22:15 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</StartDateTime>
+		<StartTestTime>1727360124</StartTestTime>
+		<TestList/>
+		<EndDateTime>Sep 26 22:15 [NON-UTF-8-BYTE-0xD6]й[NON-UTF-8-BYTE-0xFA][NON-UTF-8-BYTE-0xB1][NON-UTF-8-BYTE-0xEA]׼ʱ[NON-UTF-8-BYTE-0xBC][NON-UTF-8-BYTE-0xE4]</EndDateTime>
+		<EndTestTime>1727360124</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
