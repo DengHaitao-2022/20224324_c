@@ -149,58 +149,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "H:/mingw64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake"
-		},
-		{
-			"path" : "googletest-1.15.2/CMakeLists.txt"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "H:/mingw64/share/cmake-3.29/Modules/CMakeDependentOption.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "H:/mingw64/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
-		},
-		{
-			"path" : "googletest-1.15.2/googlemock/CMakeLists.txt"
-		},
-		{
-			"path" : "googletest-1.15.2/googlemock/cmake/gmock.pc.in"
-		},
-		{
-			"path" : "googletest-1.15.2/googlemock/cmake/gmock_main.pc.in"
-		},
-		{
-			"path" : "googletest-1.15.2/googletest/CMakeLists.txt"
-		},
-		{
-			"path" : "googletest-1.15.2/googletest/cmake/internal_utils.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "H:/mingw64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "H:/mingw64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "H:/mingw64/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
-		},
-		{
-			"path" : "googletest-1.15.2/googletest/cmake/Config.cmake.in"
-		},
-		{
-			"path" : "googletest-1.15.2/googletest/cmake/gtest.pc.in"
-		},
-		{
-			"path" : "googletest-1.15.2/googletest/cmake/gtest_main.pc.in"
 		}
 	],
 	"kind" : "cmakeFiles",

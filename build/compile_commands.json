@@ -1,38 +1,14 @@
 [
 {
   "directory": "J:/20224324_c++/build",
-  "command": "H:\\mingw64\\bin\\c++.exe -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest -g -o CMakeFiles\\test_s1.dir\\Cmp\\tests\\test_s1.cpp.obj -c J:\\20224324_c++\\Cmp\\tests\\test_s1.cpp",
-  "file": "J:\\20224324_c++\\Cmp\\tests\\test_s1.cpp",
-  "output": "CMakeFiles\\test_s1.dir\\Cmp\\tests\\test_s1.cpp.obj"
+  "command": "H:\\mingw64\\bin\\c++.exe -g -std=gnu++17 -o CMakeFiles\\main.dir\\Cmp\\s1\\main.cpp.obj -c J:\\20224324_c++\\Cmp\\s1\\main.cpp",
+  "file": "J:\\20224324_c++\\Cmp\\s1\\main.cpp",
+  "output": "CMakeFiles\\main.dir\\Cmp\\s1\\main.cpp.obj"
 },
 {
   "directory": "J:/20224324_c++/build",
-  "command": "H:\\mingw64\\bin\\c++.exe -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest -g -o CMakeFiles\\test_s1.dir\\Cmp\\s1\\s1.cpp.obj -c J:\\20224324_c++\\Cmp\\s1\\s1.cpp",
+  "command": "H:\\mingw64\\bin\\c++.exe -g -std=gnu++17 -o CMakeFiles\\main.dir\\Cmp\\s1\\s1.cpp.obj -c J:\\20224324_c++\\Cmp\\s1\\s1.cpp",
   "file": "J:\\20224324_c++\\Cmp\\s1\\s1.cpp",
-  "output": "CMakeFiles\\test_s1.dir\\Cmp\\s1\\s1.cpp.obj"
-},
-{
-  "directory": "J:/20224324_c++/build",
-  "command": "H:\\mingw64\\bin\\c++.exe -IJ:/20224324_c++/googletest-1.15.2/googlemock/include -IJ:/20224324_c++/googletest-1.15.2/googlemock -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-1.15.2\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj -c J:\\20224324_c++\\googletest-1.15.2\\googlemock\\src\\gmock-all.cc",
-  "file": "J:\\20224324_c++\\googletest-1.15.2\\googlemock\\src\\gmock-all.cc",
-  "output": "googletest-1.15.2\\googlemock\\CMakeFiles\\gmock.dir\\src\\gmock-all.cc.obj"
-},
-{
-  "directory": "J:/20224324_c++/build",
-  "command": "H:\\mingw64\\bin\\c++.exe -isystem J:/20224324_c++/googletest-1.15.2/googlemock/include -isystem J:/20224324_c++/googletest-1.15.2/googlemock -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-1.15.2\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj -c J:\\20224324_c++\\googletest-1.15.2\\googlemock\\src\\gmock_main.cc",
-  "file": "J:\\20224324_c++\\googletest-1.15.2\\googlemock\\src\\gmock_main.cc",
-  "output": "googletest-1.15.2\\googlemock\\CMakeFiles\\gmock_main.dir\\src\\gmock_main.cc.obj"
-},
-{
-  "directory": "J:/20224324_c++/build",
-  "command": "H:\\mingw64\\bin\\c++.exe -IJ:/20224324_c++/googletest-1.15.2/googletest/include -IJ:/20224324_c++/googletest-1.15.2/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-1.15.2\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj -c J:\\20224324_c++\\googletest-1.15.2\\googletest\\src\\gtest-all.cc",
-  "file": "J:\\20224324_c++\\googletest-1.15.2\\googletest\\src\\gtest-all.cc",
-  "output": "googletest-1.15.2\\googletest\\CMakeFiles\\gtest.dir\\src\\gtest-all.cc.obj"
-},
-{
-  "directory": "J:/20224324_c++/build",
-  "command": "H:\\mingw64\\bin\\c++.exe -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-1.15.2\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj -c J:\\20224324_c++\\googletest-1.15.2\\googletest\\src\\gtest_main.cc",
-  "file": "J:\\20224324_c++\\googletest-1.15.2\\googletest\\src\\gtest_main.cc",
-  "output": "googletest-1.15.2\\googletest\\CMakeFiles\\gtest_main.dir\\src\\gtest_main.cc.obj"
+  "output": "CMakeFiles\\main.dir\\Cmp\\s1\\s1.cpp.obj"
 }
 ]

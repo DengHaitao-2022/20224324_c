@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: S1_Tests
+# Project: s1
 # Configurations: Debug
 # =============================================================================
 
@@ -41,45 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = J$:/20224324_c++/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target test_s1
+# Object build statements for EXECUTABLE target main
 
 
 #############################################
-# Order-only phony target for test_s1
+# Order-only phony target for main
 
-build cmake_object_order_depends_target_test_s1: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_main: phony || .
 
-build CMakeFiles/test_s1.dir/Cmp/tests/test_s1.cpp.obj: CXX_COMPILER__test_s1_unscanned_Debug J$:/20224324_c++/Cmp/tests/test_s1.cpp || cmake_object_order_depends_target_test_s1
-  DEP_FILE = CMakeFiles\test_s1.dir\Cmp\tests\test_s1.cpp.obj.d
-  FLAGS = -g
-  INCLUDES = -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest
-  OBJECT_DIR = CMakeFiles\test_s1.dir
-  OBJECT_FILE_DIR = CMakeFiles\test_s1.dir\Cmp\tests
+build CMakeFiles/main.dir/Cmp/s1/main.cpp.obj: CXX_COMPILER__main_unscanned_Debug J$:/20224324_c++/Cmp/s1/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\Cmp\s1\main.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\Cmp\s1
 
-build CMakeFiles/test_s1.dir/Cmp/s1/s1.cpp.obj: CXX_COMPILER__test_s1_unscanned_Debug J$:/20224324_c++/Cmp/s1/s1.cpp || cmake_object_order_depends_target_test_s1
-  DEP_FILE = CMakeFiles\test_s1.dir\Cmp\s1\s1.cpp.obj.d
-  FLAGS = -g
-  INCLUDES = -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest
-  OBJECT_DIR = CMakeFiles\test_s1.dir
-  OBJECT_FILE_DIR = CMakeFiles\test_s1.dir\Cmp\s1
+build CMakeFiles/main.dir/Cmp/s1/s1.cpp.obj: CXX_COMPILER__main_unscanned_Debug J$:/20224324_c++/Cmp/s1/s1.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles\main.dir\Cmp\s1\s1.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles\main.dir
+  OBJECT_FILE_DIR = CMakeFiles\main.dir\Cmp\s1
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target test_s1
+# Link build statements for EXECUTABLE target main
 
 
 #############################################
-# Link the executable test_s1.exe
+# Link the executable main.exe
 
-build test_s1.exe: CXX_EXECUTABLE_LINKER__test_s1_Debug CMakeFiles/test_s1.dir/Cmp/tests/test_s1.cpp.obj CMakeFiles/test_s1.dir/Cmp/s1/s1.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/Cmp/s1/main.cpp.obj CMakeFiles/main.dir/Cmp/s1/s1.cpp.obj
   FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\test_s1.dir
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = test_s1.exe
-  TARGET_IMPLIB = libtest_s1.dll.a
-  TARGET_PDB = test_s1.exe.dbg
+  TARGET_FILE = main.exe
+  TARGET_IMPLIB = libmain.dll.a
+  TARGET_PDB = main.exe.dbg
 
 
 #############################################
@@ -128,478 +126,10 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
-
-#############################################
-# Utility command for list_install_components
-
-build list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cmake.exe -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build install: phony CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build install/local: phony CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build install/strip: phony CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# J:/20224324_c++/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for package
-
-build googletest-1.15.2/CMakeFiles/package.util: CUSTOM_COMMAND googletest-1.15.2/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/package: phony googletest-1.15.2/CMakeFiles/package.util
-
-
-#############################################
-# Utility command for package_source
-
-build googletest-1.15.2/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake J:/20224324_c++/build/CPackSourceConfig.cmake"
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/package_source: phony googletest-1.15.2/CMakeFiles/package_source.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build googletest-1.15.2/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2 && H:\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build googletest-1.15.2/edit_cache: phony googletest-1.15.2/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build googletest-1.15.2/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2 && H:\mingw64\bin\cmake.exe --regenerate-during-build -SJ:\20224324_c++ -BJ:\20224324_c++\build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/rebuild_cache: phony googletest-1.15.2/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build googletest-1.15.2/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build googletest-1.15.2/CMakeFiles/install.util: CUSTOM_COMMAND googletest-1.15.2/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2 && H:\mingw64\bin\cmake.exe -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/install: phony googletest-1.15.2/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build googletest-1.15.2/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-1.15.2/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2 && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/install/local: phony googletest-1.15.2/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build googletest-1.15.2/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-1.15.2/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2 && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/install/strip: phony googletest-1.15.2/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# J:/20224324_c++/googletest-1.15.2/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target gmock
-
-
-#############################################
-# Order-only phony target for gmock
-
-build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
-
-build googletest-1.15.2/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug J$:/20224324_c++/googletest-1.15.2/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
-  DEP_FILE = googletest-1.15.2\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
-  FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -IJ:/20224324_c++/googletest-1.15.2/googlemock/include -IJ:/20224324_c++/googletest-1.15.2/googlemock -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest
-  OBJECT_DIR = googletest-1.15.2\googlemock\CMakeFiles\gmock.dir
-  OBJECT_FILE_DIR = googletest-1.15.2\googlemock\CMakeFiles\gmock.dir\src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target gmock
-
-
-#############################################
-# Link the static library lib\libgmock.a
-
-build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug googletest-1.15.2/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest-1.15.2\googlemock\CMakeFiles\gmock.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = lib\libgmock.a
-  TARGET_PDB = gmock.a.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target gmock_main
-
-
-#############################################
-# Order-only phony target for gmock_main
-
-build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
-
-build googletest-1.15.2/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug J$:/20224324_c++/googletest-1.15.2/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
-  DEP_FILE = googletest-1.15.2\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
-  FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem J:/20224324_c++/googletest-1.15.2/googlemock/include -isystem J:/20224324_c++/googletest-1.15.2/googlemock -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest
-  OBJECT_DIR = googletest-1.15.2\googlemock\CMakeFiles\gmock_main.dir
-  OBJECT_FILE_DIR = googletest-1.15.2\googlemock\CMakeFiles\gmock_main.dir\src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target gmock_main
-
-
-#############################################
-# Link the static library lib\libgmock_main.a
-
-build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug googletest-1.15.2/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest-1.15.2\googlemock\CMakeFiles\gmock_main.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = lib\libgmock_main.a
-  TARGET_PDB = gmock_main.a.dbg
-
-
-#############################################
-# Utility command for package
-
-build googletest-1.15.2/googlemock/CMakeFiles/package.util: CUSTOM_COMMAND googletest-1.15.2/googlemock/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googlemock/package: phony googletest-1.15.2/googlemock/CMakeFiles/package.util
-
-
-#############################################
-# Utility command for package_source
-
-build googletest-1.15.2/googlemock/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake J:/20224324_c++/build/CPackSourceConfig.cmake"
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googlemock/package_source: phony googletest-1.15.2/googlemock/CMakeFiles/package_source.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build googletest-1.15.2/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googlemock && H:\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build googletest-1.15.2/googlemock/edit_cache: phony googletest-1.15.2/googlemock/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build googletest-1.15.2/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googlemock && H:\mingw64\bin\cmake.exe --regenerate-during-build -SJ:\20224324_c++ -BJ:\20224324_c++\build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googlemock/rebuild_cache: phony googletest-1.15.2/googlemock/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build googletest-1.15.2/googlemock/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build googletest-1.15.2/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND googletest-1.15.2/googlemock/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googlemock && H:\mingw64\bin\cmake.exe -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googlemock/install: phony googletest-1.15.2/googlemock/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build googletest-1.15.2/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-1.15.2/googlemock/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googlemock && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googlemock/install/local: phony googletest-1.15.2/googlemock/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build googletest-1.15.2/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-1.15.2/googlemock/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googlemock && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googlemock/install/strip: phony googletest-1.15.2/googlemock/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# J:/20224324_c++/googletest-1.15.2/googlemock/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target gtest
-
-
-#############################################
-# Order-only phony target for gtest
-
-build cmake_object_order_depends_target_gtest: phony || .
-
-build googletest-1.15.2/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug J$:/20224324_c++/googletest-1.15.2/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
-  DEP_FILE = googletest-1.15.2\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
-  FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -IJ:/20224324_c++/googletest-1.15.2/googletest/include -IJ:/20224324_c++/googletest-1.15.2/googletest
-  OBJECT_DIR = googletest-1.15.2\googletest\CMakeFiles\gtest.dir
-  OBJECT_FILE_DIR = googletest-1.15.2\googletest\CMakeFiles\gtest.dir\src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target gtest
-
-
-#############################################
-# Link the static library lib\libgtest.a
-
-build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug googletest-1.15.2/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest-1.15.2\googletest\CMakeFiles\gtest.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = lib\libgtest.a
-  TARGET_PDB = gtest.a.dbg
-
-# =============================================================================
-# Object build statements for STATIC_LIBRARY target gtest_main
-
-
-#############################################
-# Order-only phony target for gtest_main
-
-build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
-
-build googletest-1.15.2/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug J$:/20224324_c++/googletest-1.15.2/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
-  DEP_FILE = googletest-1.15.2\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
-  FLAGS = -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem J:/20224324_c++/googletest-1.15.2/googletest/include -isystem J:/20224324_c++/googletest-1.15.2/googletest
-  OBJECT_DIR = googletest-1.15.2\googletest\CMakeFiles\gtest_main.dir
-  OBJECT_FILE_DIR = googletest-1.15.2\googletest\CMakeFiles\gtest_main.dir\src
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target gtest_main
-
-
-#############################################
-# Link the static library lib\libgtest_main.a
-
-build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug googletest-1.15.2/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
-  LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest-1.15.2\googletest\CMakeFiles\gtest_main.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = lib\libgtest_main.a
-  TARGET_PDB = gtest_main.a.dbg
-
-
-#############################################
-# Utility command for package
-
-build googletest-1.15.2/googletest/CMakeFiles/package.util: CUSTOM_COMMAND googletest-1.15.2/googletest/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cpack.exe --config ./CPackConfig.cmake"
-  DESC = Run CPack packaging tool...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googletest/package: phony googletest-1.15.2/googletest/CMakeFiles/package.util
-
-
-#############################################
-# Utility command for package_source
-
-build googletest-1.15.2/googletest/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build && H:\mingw64\bin\cpack.exe --config ./CPackSourceConfig.cmake J:/20224324_c++/build/CPackSourceConfig.cmake"
-  DESC = Run CPack packaging tool for source...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googletest/package_source: phony googletest-1.15.2/googletest/CMakeFiles/package_source.util
-
-
-#############################################
-# Utility command for edit_cache
-
-build googletest-1.15.2/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googletest && H:\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build googletest-1.15.2/googletest/edit_cache: phony googletest-1.15.2/googletest/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build googletest-1.15.2/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googletest && H:\mingw64\bin\cmake.exe --regenerate-during-build -SJ:\20224324_c++ -BJ:\20224324_c++\build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googletest/rebuild_cache: phony googletest-1.15.2/googletest/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build googletest-1.15.2/googletest/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build googletest-1.15.2/googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest-1.15.2/googletest/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googletest && H:\mingw64\bin\cmake.exe -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googletest/install: phony googletest-1.15.2/googletest/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build googletest-1.15.2/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest-1.15.2/googletest/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googletest && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googletest/install/local: phony googletest-1.15.2/googletest/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build googletest-1.15.2/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest-1.15.2/googletest/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D J:\20224324_c++\build\googletest-1.15.2\googletest && H:\mingw64\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build googletest-1.15.2/googletest/install/strip: phony googletest-1.15.2/googletest/CMakeFiles/install/strip.util
-
 # =============================================================================
 # Target aliases.
 
-build gmock: phony lib/libgmock.a
-
-build gmock_main: phony lib/libgmock_main.a
-
-build gtest: phony lib/libgtest.a
-
-build gtest_main: phony lib/libgtest_main.a
-
-build libgmock.a: phony lib/libgmock.a
-
-build libgmock_main.a: phony lib/libgmock_main.a
-
-build libgtest.a: phony lib/libgtest.a
-
-build libgtest_main.a: phony lib/libgtest_main.a
-
-build test_s1: phony test_s1.exe
+build main: phony main.exe
 
 # =============================================================================
 # Folder targets.
@@ -609,28 +139,7 @@ build test_s1: phony test_s1.exe
 #############################################
 # Folder: J:/20224324_c++/build
 
-build all: phony test_s1.exe googletest-1.15.2/all
-
-# =============================================================================
-
-#############################################
-# Folder: J:/20224324_c++/build/googletest-1.15.2
-
-build googletest-1.15.2/all: phony googletest-1.15.2/googlemock/all
-
-# =============================================================================
-
-#############################################
-# Folder: J:/20224324_c++/build/googletest-1.15.2/googlemock
-
-build googletest-1.15.2/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a googletest-1.15.2/googletest/all
-
-# =============================================================================
-
-#############################################
-# Folder: J:/20224324_c++/build/googletest-1.15.2/googletest
-
-build googletest-1.15.2/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
+build all: phony main.exe
 
 # =============================================================================
 # Built-in targets
@@ -639,14 +148,14 @@ build googletest-1.15.2/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in H$:/mingw64/share/cmake-3.29/Modules/CMakeCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeDependentOption.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeRCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/GNUInstallDirs.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake H$:/mingw64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake J$:/20224324_c++/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/googlemock/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/googlemock/cmake/gmock.pc.in J$:/20224324_c++/googletest-1.15.2/googlemock/cmake/gmock_main.pc.in J$:/20224324_c++/googletest-1.15.2/googletest/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/googletest/cmake/Config.cmake.in J$:/20224324_c++/googletest-1.15.2/googletest/cmake/gtest.pc.in J$:/20224324_c++/googletest-1.15.2/googletest/cmake/gtest_main.pc.in J$:/20224324_c++/googletest-1.15.2/googletest/cmake/internal_utils.cmake
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeRCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake J$:/20224324_c++/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in H$:/mingw64/share/cmake-3.29/Modules/CMakeCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeDependentOption.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakePackageConfigHelpers.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeRCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/GNUInstallDirs.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake H$:/mingw64/share/cmake-3.29/Modules/WriteBasicConfigVersionFile.cmake J$:/20224324_c++/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/googlemock/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/googlemock/cmake/gmock.pc.in J$:/20224324_c++/googletest-1.15.2/googlemock/cmake/gmock_main.pc.in J$:/20224324_c++/googletest-1.15.2/googletest/CMakeLists.txt J$:/20224324_c++/googletest-1.15.2/googletest/cmake/Config.cmake.in J$:/20224324_c++/googletest-1.15.2/googletest/cmake/gtest.pc.in J$:/20224324_c++/googletest-1.15.2/googletest/cmake/gtest_main.pc.in J$:/20224324_c++/googletest-1.15.2/googletest/cmake/internal_utils.cmake: phony
+build CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeRCCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeRCInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake H$:/mingw64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Compiler/GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/Windows.cmake H$:/mingw64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake J$:/20224324_c++/CMakeLists.txt: phony
 
 
 #############################################

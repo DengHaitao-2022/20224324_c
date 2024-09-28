@@ -1,14 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
-project(S1_Tests)
+project(s1)
 
-# Ìí¼ÓGoogle Test×ÓÄ¿Â¼
-add_subdirectory(googletest-1.15.2)
+# è®¾ç½®C++æ ‡å‡†
+set(CMAKE_CXX_STANDARD 17)
 
-# °üº¬Google TestÍ·ÎÄ¼ş
-include_directories(googletest-1.15.2/googletest/include)
+# æ·»åŠ æºæ–‡ä»¶
+set(SOURCES ${CMAKE_SOURCE_DIR}/Cmp/s1/main.cpp ${CMAKE_SOURCE_DIR}/Cmp/s1/s1.cpp)
 
-# Ìí¼Ó²âÊÔ¿ÉÖ´ĞĞÎÄ¼ş
-add_executable(test_s1 Cmp/tests/test_s1.cpp Cmp/s1/s1.cpp)
-
-# Á´½ÓGoogle Test¿â
-target_link_libraries(test_s1 gtest gtest_main)
+# æ·»åŠ å¯æ‰§è¡Œæ–‡ä»¶
+add_executable(main ${SOURCES})
