@@ -6,6 +6,13 @@
 
 // 构造函数，从文件中读取源程序
 Lexer::Lexer(const std::string& filename) : p(0), m(0), n(0), row(1), sum(0) {
+    /**
+     * 从文件中读取源程序
+     * @param filename 源程序文件名
+     * @return void
+     * @exception 找不到文件时抛出异常
+     * 
+     */
     std::ifstream file;
     std::string fname = filename;
 
@@ -62,7 +69,7 @@ std::pair<int, std::string> Lexer::getNextToken() {
     }
     if (ch == '\0') {
         syn = -1; // 文件结束
-        return {syn, "EOF"};
+        return {syn, "文件结束"};
     }
 
     if (isalpha(ch)) {
@@ -72,21 +79,25 @@ std::pair<int, std::string> Lexer::getNextToken() {
             readChar();
         }
         unreadChar(); // 回退一个字符
-        syn = 2; // 默认是标识符
-        for (n = 0; n < 8; n++) {
+        syn = 2; // 默认是标识符,由于函数类别未定义，所以先默认为标识符
+        // for (n = 0; n < std::size(rwtab); n++) {
+        for (n = 0; n < sizeof(rwtab) / sizeof(rwtab[0]); n++) {
             if (token == rwtab[n]) {
                 syn = 1; // 关键字
                 break;
             }
         }
-        for (n = 0; n < 8; n++) {
-            if (token == rwtab1[n]) {
-                syn = 2; // 标识符
-                break;
-            }
-        }
+        // for (n = 0; n < 8; n++) {
+        //     if (token == rwtab1[n]) {
+        //         syn = 2; // 标识符
+        //         break;
+        //     }
+        // }
+        // if (keywords.find(token) != keywords.end()) { // 使用哈希表查找关键字,优化查找速度
+        //     syn = 1; // 关键字
+        // }
     } else if (isdigit(ch)) {
-        bool isFloat = false;
+        bool isFloat = false; //
         token += ch;
         readChar();
         while (isdigit(ch) || ch == '.' || ch == 'e' || ch == 'E') {
@@ -174,14 +185,14 @@ std::pair<int, std::string> Lexer::getNextToken() {
                             }
                             isFloat = true;
                         }
-                        if (ch == 'e' || ch == 'E') {
+                        if (ch == 'e' || ch == 'E') { // 读取指数部分
                             token += ch;
                             readChar();
-                            if (ch == '+' || ch == '-') {
+                            if (ch == '+' || ch == '-') { // 读取指数部分的符号
                                 token += ch;
                                 readChar();
                             }
-                            while (isdigit(ch)) {
+                            while (isdigit(ch)) {  // 读取指数部分的数字
                                 token += ch;
                                 readChar();
                             }
@@ -268,7 +279,7 @@ std::pair<int, std::string> Lexer::getNextToken() {
                     token += ch;
                     readChar();
                     if (token == "#i") {
-                        while (isalnum(ch)) {
+                        while (isalnum(ch)) { 
                             token += ch;
                             readChar();
                         }
