@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    filesystem::current_path("J:/20224324_c++/Cmp/s1");
+    filesystem::current_path("J:/20224324_c++/Cmp/s1"); //设置当前工作目录
     //打印当前工作目录
     cout << "当前工作目录: " << filesystem::current_path() << endl;
     // 打印提示信息,每种标识符对应的类型
